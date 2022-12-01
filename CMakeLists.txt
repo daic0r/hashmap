@@ -8,3 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED 20)
 add_executable(hashmap main.cpp)
 
 target_link_options(hashmap PRIVATE -fsanitize=address)
+target_compile_definitions(hashmap PRIVATE HASHMAP_DEBUG_)
